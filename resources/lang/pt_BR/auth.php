@@ -1,0 +1,26 @@
+<?php
+return [
+    'welcome_dashboard' => 'Bem-vindo ao seu Painel',
+    'email' => 'E-mail',
+    'password' => 'Senha',
+    'login' => 'Entrar',
+    'register' => 'Registrar-se',
+    'failed' => 'Email ou senha inválidos. Por favor, verifique e tente novamente.',
+
+    'Login' => 'Entrar',
+    'Register' => 'Registrar',
+    'Logout' => 'Sair',
+    'E-Mail Address' => 'Endereço de E-mail',
+    'Password' => 'Senha',
+    'Confirm Password' => 'Confirmar Senha',
+    'Remember Me' => 'Lembrar-me',
+    'Forgot Your Password?' => 'Esqueceu sua senha?',
+    'Name' => 'Nome',
+    'Send Password Reset Link' => 'Enviar link de redefinição de senha',
+    'Reset Password' => 'Redefinir Senha',
+    'Verify Your Email Address' => 'Verifique seu endereço de e-mail',
+    'A fresh verification link has been sent to your email address.' => 'Um novo link de verificação foi enviado para seu endereço de e-mail.',
+    'Before proceeding, please check your email for a verification link.' => 'Antes de continuar, verifique seu e-mail para o link de verificação.',
+    'If you did not receive the email' => 'Se você não recebeu o e-mail',
+    'click here to request another' => 'clique aqui para solicitar outro',
+];
