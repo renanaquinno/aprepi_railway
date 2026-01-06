@@ -11,7 +11,8 @@ php artisan view:cache
 
 # Rodar as migrações da base de dados (o --force é obrigatório em produção)
 echo "Running migrations..."
-php artisan migrate --force
 
+php artisan migrate:fresh --force
+#php artisan migrate --force
 # Iniciar o processo principal (ex: php-fpm ou o que estiver no seu Dockerfile)
 exec "$@"
