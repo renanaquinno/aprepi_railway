@@ -11,7 +11,7 @@ return new class extends Migration
      */
    public function up()
 {
-    Schema::table('posts', function (Blueprint $table) {
+    Schema::table('postagens', function (Blueprint $table) {
         $table->dropForeign(['categoria_id']);
         $table->dropColumn('categoria_id');
         $table->string('categoria')->after('conteudo');

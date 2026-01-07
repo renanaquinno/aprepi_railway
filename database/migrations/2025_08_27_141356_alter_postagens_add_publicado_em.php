@@ -7,7 +7,7 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::table('posts', function (Blueprint $table) {
+        Schema::table('postagens', function (Blueprint $table) {
             // Adiciona novo campo datetime
             $table->dateTime('publicado_em')->nullable()->after('status');
 
@@ -18,7 +18,7 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::table('posts', function (Blueprint $table) {
+        Schema::table('postagens', function (Blueprint $table) {
             // Volta os campos antigos
             $table->date('data_publicacao')->nullable()->after('categoria_id');
             $table->string('hora_publicacao')->nullable()->after('data_publicacao');
