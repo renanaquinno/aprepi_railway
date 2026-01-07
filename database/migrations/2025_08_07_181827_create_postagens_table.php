@@ -3,11 +3,11 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostsTable extends Migration
+class CreatePostagensTable extends Migration
 {
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('postagens', function (Blueprint $table) {
             $table->id();
             $table->string('titulo', 255);
             $table->text('conteudo');

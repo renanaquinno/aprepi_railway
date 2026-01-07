@@ -13,9 +13,9 @@ return new class extends Migration
 {
     Schema::create('post_images', function (Blueprint $table) {
         $table->id();
-        $table->foreignId('postagem_id')->constrained()->onDelete('cascade');
-        $table->string('caminho'); // Caminho do arquivo da imagem
-        $table->string('descricao')->nullable(); // Descrição opcional da imagem
+        $table->foreignId('postagem_id')->constrained('postagens')->onDelete('cascade');
+        $table->string('caminho');
+        $table->string('descricao')->nullable();
         $table->timestamps();
     });
 }

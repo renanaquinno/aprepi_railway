@@ -14,5 +14,6 @@ echo "Running migrations..."
 
 php artisan migrate:fresh --force
 #php artisan migrate --force
+
 # Iniciar o processo principal (ex: php-fpm ou o que estiver no seu Dockerfile)
 exec "$@"
