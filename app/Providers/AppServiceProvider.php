@@ -19,8 +19,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if (app()->environment('production')) {
-        URL::forceScheme('https');
-    }
+        // Força o HTTPS se o ambiente for produção (Railway)
+        if (config('app.env') === 'production' || env('RAILWAY_ENVIRONMENT')) {
+            URL::forceScheme('https');
+        }
     }
 }
