@@ -73,10 +73,11 @@ COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # Expõe a porta padrão do PHP-FPM
-EXPOSE 9000
+#EXPOSE 9000
 
 # O Entrypoint executa comandos de setup (migrations, cache) antes do CMD
 ENTRYPOINT ["entrypoint.sh"]
+CMD php artisan serve --host=0.0.0.0 --port=${PORT:-8080}
 
 # Comando que inicia o PHP-FPM
-CMD ["php-fpm"]
+#CMD ["php-fpm"]
