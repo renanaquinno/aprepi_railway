@@ -12,8 +12,8 @@ class AdminVoluntarioController extends Controller
     {
         $voluntarios = User::where('tipo_usuario', 'voluntario_ext')
             ->where(function($query) {
-                $query->whereNotNull('recusado_em')
-                    ->orWhereNotNull('aprovado_em');
+                $query->whereNull('recusado_em')
+                    ->whereNull('aprovado_em');
             })
             ->orderBy('created_at', 'desc')
             ->paginate(10);
